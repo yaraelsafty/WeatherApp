@@ -1,21 +1,24 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#09C"
-    android:padding="@dimen/widget_margin">
+    android:layout_height="wrap_content"
+    android:background="@color/card_bg"
+    android:padding="@dimen/widget_margin"
+    android:orientation="horizontal"
+    >
+    <ImageView
+        android:id="@+id/iv_widget_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"/>
 
     <TextView
-        android:id="@+id/appwidget_text"
+        android:id="@+id/tv_widget_temp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_margin="8dp"
-        android:background="#09C"
-        android:contentDescription="@string/appwidget_text"
         android:text="@string/appwidget_text"
-        android:textColor="#ffffff"
+        android:textColor="@color/colorAccent"
         android:textSize="24sp"
+        android:layout_margin="10dp"
         android:textStyle="bold|italic" />
 
-</RelativeLayout>
+</LinearLayout>
