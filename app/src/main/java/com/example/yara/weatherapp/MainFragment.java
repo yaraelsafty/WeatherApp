@@ -3,6 +3,7 @@ package com.example.yara.weatherapp;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -41,6 +42,7 @@ public class MainFragment extends Fragment {
     ProgressBar progressBar,humidity_progressbar;
     private static final String ARG_City = "city";
     private String city_id;
+    SharedPreferences preferences;
 
     public MainFragment() {
         // Required empty public constructor
@@ -81,6 +83,8 @@ public class MainFragment extends Fragment {
         humidity_progressbar=view.findViewById(R.id.humidity_progressbar);
         humidity=view.findViewById(R.id.tv_humidity);
         recyclerView.setLayoutManager(new LinearLayoutManager(this.getActivity()));
+
+
 
 
         getWeather();
@@ -131,8 +135,18 @@ public class MainFragment extends Fragment {
                         result.getList().get(0).getMain().getTempMin(),result.getList().get(0).getMain().getTempMax());
 
                 saveData(weatherEntry);
+
+                saveForWidget(Temp);
             }
         });
+    }
+
+    private void saveForWidget(Integer s) {
+        preferences=getActivity().getSharedPreferences("MyPref", 0);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putInt("temp", s);
+        editor.commit();
+
     }
 
     private void saveData(WeatherEntry Entry) {
