@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    tools:context="com.example.yara.weatherapp.CallusFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+      android:layout_margin="30dp"
+       android:orientation="vertical">
+       <TextView
+           android:id="@+id/tv_email"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Send Email"
+           android:textStyle="bold"
+           android:textSize="30sp"
+           android:layout_margin="5dp"
+           android:textColor="@color/colorAccent"/>
+       <TextView
+           android:id="@+id/tv_phone"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+
+           android:text="@string/phone"
+           android:textStyle="bold"
+           android:textSize="30sp"
+           android:layout_margin="5dp"
+           android:textColor="@color/colorAccent"/>
+   </LinearLayout>
+
+</FrameLayout>

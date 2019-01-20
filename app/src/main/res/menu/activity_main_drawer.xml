@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Cairo"
+            android:icon="@drawable/ic_city"
+            android:title="@string/Cairo" />
+        <item
+            android:id="@+id/nav_Alex"
+            android:icon="@drawable/ic_city"
+            android:title="@string/Alex" />
+        <item
+            android:id="@+id/nav_Mansoura"
+            android:icon="@drawable/ic_city"
+            android:title="@string/Mansoura" />
+        <item
+            android:id="@+id/nav_Landon"
+            android:icon="@drawable/ic_city"
+            android:title="@string/Landon" />
+        <item
+            android:id="@+id/nav_Paris"
+            android:icon="@drawable/ic_city"
+            android:title="@string/Paris" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+
+            <item
+                android:id="@+id/nav_connect_us"
+                android:icon="@drawable/ic_connect_us"
+                android:title="@string/connect_us" />
+
+        </menu>
+    </item>
+
+</menu>

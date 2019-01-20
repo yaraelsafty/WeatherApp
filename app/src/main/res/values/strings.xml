@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--Cities-->
+    <string name="Cairo"><font size="25">Cairo</font></string>
+    <string name="Alex"><font size="25">Alex</font></string>
+    <string name="Mansoura"><font size="25">Mansoura</font></string>
+    <string name="Landon"><font size="25">Landon</font></string>
+    <string name="Paris"><font size="25">Paris</font></string>
+
+
+    <string name="connect_us"><font size="25">Connect Us</font></string>
+    <string name="share_app"><font size="25">Share App</font></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind">Wind</string>
+
+    <string name="phone"> Call US : <u>0123456789</u></string>
+
+</resources>
